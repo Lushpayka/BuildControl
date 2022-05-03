@@ -1,0 +1,95 @@
+.work {
+    .work-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        .left {
+            transform: translateX(-50%);
+            opacity: 0;
+            width: 462px;
+            height: 585px;
+            background: url(../images/work-bg.png) no-repeat left bottom;
+            .section-title {
+                margin-bottom: 21px;
+            }
+            .subtitle {
+                width: 462px;
+            }
+        }
+        .left.active {
+            transform: translateX(0%);
+            opacity: 1;
+            transition: all 2s ease;
+        }
+        .right {
+            .item {
+                position: relative;
+                padding-left: 64px;
+                margin-bottom: 30px;
+                transform: translateX(50%);
+                opacity: 0;
+                .item-title {
+                    font-style: normal;
+                    font-size: 17px;
+                    line-height: 24px;
+                    color: #212B31;
+                    margin-bottom: 10px;
+                }
+                .item-text {
+                    width: 448px;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #72787D;
+                }
+                &:nth-child(1).active {
+                    transform: translateX(0%);
+                    opacity: 1;
+                    transition: all 2s ease;
+                }
+                &:nth-child(2).active {
+                    transform: translateX(0%);
+                    opacity: 1;
+                    transition: all 2.5s ease;
+                }
+                &:nth-child(3).active {
+                    transform: translateX(0%);
+                    opacity: 1;
+                    transition: all 3s ease;
+                }
+                &:nth-child(4).active {
+                    transform: translateX(0%);
+                    opacity: 1;
+                    transition: all 3.5s ease;
+                }
+                &::after {
+                    content: '1';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    padding: 10px 16px;
+                    border: 1px solid #DADEDF;
+                }
+                &:nth-child(2)::after {
+                    content: '2';
+                }
+                &:nth-child(3)::after {
+                    content: '3';
+                }
+                &:nth-child(4)::after {
+                    content: '4';
+                }
+            }
+            .buttons {
+                transform: translateX(50%);
+                opacity: 0;
+            }
+            .buttons.active {
+                transform: translateX(0%);
+                opacity: 1;
+                transition: all 4s ease;
+            }
+        }
+    }
+}

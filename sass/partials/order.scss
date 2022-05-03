@@ -1,0 +1,55 @@
+.order {
+    .order-inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        .section-title {
+            text-align: center;
+            width: 781px;
+        }
+        .order-block {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            margin-top: 168px;
+            .left {
+                height: 316px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                .section-title {
+                    width: 489px;
+                    text-align: left;
+                }
+                .subtitle {
+                    width: 542px;
+                    text-align: left;
+                }
+                .we {
+                    position: relative;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 32px;
+                    color: #212B31;
+                    z-index: 99;
+                }
+                .yellow {
+                    position: absolute;
+                    bottom: 41px;
+                    left: 123px;
+                    width: 250px;
+                    height: 16px;
+                    background: #FFD042;
+                }
+            }
+            .right {
+                width: 464px;
+                height: 400px;
+                background: url(../images/order-block.png) no-repeat center;
+            }
+        }
+    }
+}

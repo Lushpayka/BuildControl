@@ -1,0 +1,85 @@
+.who-we {
+    .who-inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .section-title, .subtitle {
+            text-align: center;
+        }
+        .section-title {
+            margin-bottom: 21px;
+        }
+        .subtitle {
+            width: 827px;
+        }
+    }
+    .items {
+        margin-top: 28px;
+        height: 944px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .item {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            .left {
+                .item-title {
+                    width: 550px;
+                    font-style: normal;
+                    font-size: 18px;
+                    line-height: 24px;
+                    color: #212B31;
+                    margin-bottom: 19px;
+                }
+                .item-text {
+                    width: 500px;
+                    font-style: normal;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #72787D;
+                }
+            }
+            .right, .right-car {
+                width: 402px;
+                height: 272px;
+                background: url(../images/we-1.png) no-repeat center;
+            }
+            &:nth-child(2) {
+                flex-direction: row-reverse;
+                .right {
+                    background: url(../images/we-2.png) no-repeat center;
+                    opacity: 0;
+                    transform: translateX(-300px);
+                }
+                .right.active {
+                    transform: translateX(0%);
+                    transition: all 2s ease;
+                    opacity: 1;
+                }
+            }
+            &:nth-child(3) {
+                .right {
+                    background: url(../images/we-3.png) no-repeat center;
+                    opacity: 0;
+                    transform: translateX(300px);
+                }
+                .right.active {
+                    transform: translateX(0%);
+                    transition: all 2s ease;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+.right-car {
+    opacity: 0;
+    transform: translateX(300px);
+}
+.right-car.active {
+    transform: translateX(0%);
+    transition: all 2s ease;
+    opacity: 1;
+}
+

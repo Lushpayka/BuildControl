@@ -1,0 +1,90 @@
+.reliability {
+    .reliability-inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .section-title, .subtitle {
+            text-align: center;
+        }
+        .subtitle {
+            margin-top: 17px;
+            width: 857px;
+            position: relative;
+        }
+        .flower {
+            position: absolute;
+            top: -19px;
+            left: 778px;
+        }
+    }
+    .items {
+        margin-top: 48px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+        .item {
+            width: 30%;
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           margin-bottom: 33px;
+            img {
+                width: 48px;
+                height: 48px;
+                margin-bottom: 19px;
+            }
+            .item-title {
+                font-style: normal;
+                font-size: 18px;
+                line-height: 24px;
+                color: #212B31;
+                margin-bottom: 11px;
+            }
+            .item-text {
+                width: 333px;
+                font-style: normal;
+                font-size: 16px;
+                line-height: 24px;
+                color: #72787D;
+                text-align: center;
+            }
+        }
+    }
+    .instruction {
+        height: 130px;
+        background: #F6F8F9;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        img {
+            width: 40px;
+            height: 40px;
+        }
+        .inst-text {
+            font-style: normal;
+            font-size: 18px;
+            line-height: 32px;
+            color: #212B31;
+        }
+        .button-more {
+            background: #FFFFFF;
+            border: 1px solid #DADEDF;
+            border-radius: 4px;
+            padding: 13px 25px;
+            font-style: normal;
+            font-size: 18px;
+            line-height: 24px;
+            color: #212B31;
+            cursor: pointer;
+            -webkit-box-shadow: 0px 10px 13px -7px #000000, 0px 3px 5px 2px rgba(0,0,0,0); 
+            box-shadow: 0px 10px 13px -7px #000000, 0px 3px 5px 2px rgba(0,0,0,0);
+            &:hover {
+                -webkit-box-shadow: 2px 5px 16px 0px #000000, 0px 3px 5px 2px rgba(0,0,0,0); 
+                box-shadow: 2px 5px 16px 0px #000000, 0px 3px 5px 2px rgba(0,0,0,0);
+            }
+        }
+    }
+}
